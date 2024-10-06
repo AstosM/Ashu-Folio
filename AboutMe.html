@@ -1,0 +1,78 @@
+<div class="about">
+    <img src="IMG_20240504_221026.jpg" alt="">  
+
+
+      <div class="info">
+          <h3>About Me</h3>
+          <p>As a passionate front-end web developer, I specialize in creating dynamic and user-friendly interfaces that enhance the overall digital experience. With a strong foundation in HTML, CSS, and JavaScript, I focus on delivering responsive designs that seamlessly adapt to any device. My approach combines aesthetics with functionality, ensuring that every project not only looks great but also performs efficiently. I thrive on collaboration and continuous learning, always eager to incorporate the latest technologies and best practices into my work. Explore my portfolio to see how I transform ideas into engaging web applications!
+          </p>
+          <button class="hire-btn">Hire Me</button>
+      </div>
+  </div>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: #212529;
+}
+    .hire-btn{
+    background: #ffb742;
+    padding: 6px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover{
+    background: #74489d;
+}
+
+    .seprator{
+    margin: 50px 50px 30px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    display: inline-block;
+    color: #ffb742;
+    border-radius: 12px;
+}
+
+    .about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 0 50px;
+}
+
+.about img{
+    width: 280px;
+    border-radius: 30px;
+}
+
+.about .info h3{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .info p{
+    color: #ccc;
+    font-size: 14px;
+}
+
+.about .info button{
+    margin-top: 30px;
+}
+
+  </style>
