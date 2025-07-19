@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My  Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #f0f2f5, #dfe9f3);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 3rem;
+      color: #112d4e;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    .card::before {
+      /* content: ''; */
+      position: absolute;
+      top: -40%;
+      left: -40%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.15), transparent);
+      transform: rotate(45deg);
+      transition: opacity 0.4s ease;
+      opacity: 0;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      color: #3f72af;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(to right, #3f72af, #112d4e);
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to right, #27496d, #0b132b);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="color:#0083b0;font-size:2rem;">My Projects</h2>
+
+<div class="grid">
+  <div class="card" style="background: linear-gradient(135deg, #f6d365, #fda085);">
+    <h3>Portfolio Website</h3>
+    <p>Showcasing my work and skills in a modern layout.</p>
+    <a class="btn" href="https://astosm.github.io/Ashu-Folio/" target="_blank">See Project</a>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #d7cdf8, #ffc0af);">
+    <h3>StudWeb - Make Exams Easy</h3>
+    <p>A platform for Sessional & University exam PYQs.</p>
+    <a class="btn" href="https://astosm.github.io/StudWeb/" target="_blank">See Project</a>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb);">
+    <h3>QR Generator</h3>
+    <p>A simple QR code generator for files & text.</p>
+    <a class="btn" href="https://astosm.github.io/QR-CODE-generator/" target="_blank">See Project</a>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #a1fde3, #0cb2ff);">
+    <h3>Simple Calcy</h3>
+    <p>An interactive calculator for basic math operations.</p>
+    <a class="btn" href="https://astosm.github.io/Simple-Calculator/" target="_blank">See Project</a>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #e388c7, #dec156);">
+    <h3>Landing Page</h3>
+    <p>A general-purpose landing page demo.</p>
+    <a class="btn" href="Landpage.html" target="_blank">See Project</a>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb);">
+    <h3>To-Do App</h3>
+    <p>A task manager using local storage.</p>
+    <a class="btn" href="https://astosm.github.io/To-Do-App/" target="_blank">See Project</a>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
+    <h3>Weather Dashboard</h3>
+    <p>Displays live weather from OpenWeather API.</p>
+    <a class="btn" href="https://astosm.github.io/Weather-Dashboard/" target="_blank">See Project</a>
+  </div>
+</div>
+
+
+</body>
+</html>
