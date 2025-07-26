@@ -2,195 +2,324 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="project1.css">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <title>Student Papers</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    (function () {
+      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+    })();
+  </script>
+
 </head>
 
 <body>
+  <div class="container">
+    <header>
+      <img src="Screenshot 2025-07-19 231002.png" alt="Admin" />
+      <h1>📚 Student Papers Archive</h1>
+      <p>Introducing a new resourse for AKTU students</p>
+      <!-- Pay ₹5 to access each paper -->
+    </header>
 
-    <div class="navbar">
-        <h2><a href="index.html" 
-              rel="noopener noreferrer"
-   style="text-decoration: none;color: inherit; font-size: 26px;">
-   AstosM
-</a></h2>
-        <ul>
-            <li><a href="index.html" target="_blank">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="Resume_Ashutosh.pdf" target="_blank">Resume</a></li>
-            <li><a href="Certificates.html" target="_blank">Certificates</a></li>
-            <li><a href="contact.html" target="_blank">Contact</a></li>
-            <li><a href="AboutMe.html" target="_blank">About</a></li>
-            <li><a href="Projects.html" target="_blank">Projects</a></li>
-        </ul>
-
-        <button class="hire-btn">Hire Me</button>
-    </div>
-
-    <div class="main">
-        <h4>Hi, I Am <span>Ashutosh Maurya</span> 👋</h4>
-        <p class="title">FrontEnd Web Developer</p>
-        <p class="subtitle">Crafting interactive and responsive web experiences, bringing designs to life with HTML,
-            CSS, and JavaScript!</p>
-        <img src="IMG_20240504_222214.jpg" alt="">
-    </div>
-    <div class="btn-con">
-        <a href="Resume_Ashutosh.pdf" class="main-btn">
-            <span class="btn-text">Download CV</span>
-            <span class="btn-icon"><i class="fas fa-download"></i></span>
-        </a>
-    </div>
-
-    <div class="guarantee">
-        <div class="item">
-            <div class="icon">
-                <i class='bx bx-check-shield'></i>
-            </div>
-            <div class="info">
-                <h3>+2</h3>
-                <p>Years Of Experiences</p>
-            </div>
-            <i class='bx bx-chevron-right'></i>
+    <section>
+      <h2>🎓 Semester 1 Subjects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Mathematics-1</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BAS103-ENGINEERING-MATHEMATICS-I.pdf')">View</button>
         </div>
-        <div class="item">
-            <div class="icon">
-                <i class='bx bx-check-circle'></i>
-            </div>
-            <div class="info">
-                <h3>+6</h3>
-                <p><a href="Projects.html" target="_blank">Completed Projects</a></p>
-            </div>
-            <i class='bx bx-chevron-right'></i>
+        <div class="card">
+          <h4>Soft Skills</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BAS105-SOFT-SKILLS.pdf')">View</button>
         </div>
-        <div class="item">
-            <div class="icon">
-                <i class='bx bx-laugh'></i>
-            </div>
-            <div class="info">
-                <h3>+50</h3>
-                <p>Happy Clients</p>
-            </div>
-            <i class='bx bx-chevron-right'></i>
+        <div class="card">
+          <h4>Engg. Physics</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BAS101-ENGINEERING-PHYSICS.pdf')">View</button>
         </div>
-    </div>
-
-    <h5 class="seprator">Who I Am</h5>
-
-    <div class="about">
-        <img src="IMG_20240504_221026.jpg" alt="">
-
-
-        <div class="info">
-            <h3>About Me</h3>
-            <p>As a passionate front-end web developer, I specialize in creating dynamic and user-friendly interfaces
-                that enhance the overall digital experience. With a strong foundation in HTML, CSS, and JavaScript, I
-                focus on delivering responsive designs that seamlessly adapt to any device. My approach combines
-                aesthetics with functionality, ensuring that every project not only looks great but also performs
-                efficiently. I thrive on collaboration and continuous learning, always eager to incorporate the latest
-                technologies and best practices into my work. Explore my portfolio to see how I transform ideas into
-                engaging web applications!&#128522;
-            </p>
-            <button class="hire-btn">Hire Me</button>
+        <div class="card">
+          <h4>Mechanical Engg.</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BME101-FUNDAMENTALS-OF-MECHANICAL-ENGINEERING.pdf')">View</button>
         </div>
-    </div>
-
-    <h5 class="seprator">My Skills</h5>
-
-    <div class="skills">
-        <div class="left">
-            <div class="info">
-                <h3>What My Programming Skills Included?</h3>
-                <p>
-                    I develop simple, intuitive and responsive user interface that helps users get things done with less
-                    effort and time with those technologies.
-                </p>
-            </div>
-            <button class="hire-btn">Hire Me</button>
+        <div class="card">
+          <h4>Electrical Engg.</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BEE101-FUNDAMENTALS-OF-ELECTRICAL-ENGINEERING.pdf')">View</button>
         </div>
-
-        <div class="right">
-            <div class="item">
-                <i class='bx bxl-html5'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-css3'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-typescript'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-git'></i>
-            </div>
-            <div class="item">
-                <i class='bx bxl-bootstrap'></i>
-            </div>
-
-            <div class="item">
-                <i class='bx bxl-tailwind-css'></i>
-            </div>
+        <!-- Add more subjects here -->
+      </div>
+    </section>
+    <section>
+      <h2>🎓 Semester 2 Subjects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Mathematics-2</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('papers/sem1-maths.pdf')">View</button>
         </div>
-
-    </div>
-
+        <div class="card">
+          <h4>EVS</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('papers/sem1-softskills.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>Engg. Chemistry</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('papers/sem1-physics.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>Programming in C</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('papers/sem1-mechanical.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>Electronics Engg.</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('papers/sem1-electrical.pdf')">View</button>
+        </div>
+        <!-- Add more subjects here -->
+      </div>
+    </section>
+    <section>
+      <h2>🎓 Semester 4 Subjects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Mathematics-4</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BAS403-MATHEMATICS-–IV.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>Python Programming</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('papers/sem1-softskills.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>OOPS with java</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BCS403-OBJECT-ORIENTED-PROGRAMMING-WITH-JAVA.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>Operating System</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BCS401-OPERATING-SYSTEM.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>UHV</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BVE401-UNIVERSAL-HUMAN-VALUES-PROFESSIONAL-ETHICS.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>TAFL</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BCS402-THEORY-OF-AUTOMATA-AND-FORMAL-LANGUAGES.pdf')"> View</button>
+        </div>
+        <div class="card">
+          <h4>Communication Engg.</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BEC401-COMMUNICATION-ENGINEERING.pdf')"> View</button>
+        </div>
+        <div class="card">
+          <h4>Analog Circuits</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BEC402-ANALOG-CIRCUITS.pdf')"> View</button>
+        </div>
+        <div class="card">
+          <h4>NAS</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BEE403-NETWORKS-ANALYSIS-SYNTHESIS.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>Analog Electronics Circuits</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BOE408-ANALOG-ELECTRONICS-CIRCUITS.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>Electrical Machines-1</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BEE402-ELECTRICAL-MACHINES-I.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>Digital Electronics</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BEE401-DIGITAL-ELECTRONICS.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>Technical Communication</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BAS401-TECHNICAL-COMMUNICATION.pdf')">View</button>
+        </div>
+        <div class="card">
+          <h4>Cyber Security</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BCC401-CYBER-SECURITY.pdf')">View</button>
+        </div>
+        <!-- Add more subjects here -->
+      </div>
+    </section>
+    <section>
+      <h1 style="text-decoration: underline;"> &nbsp;&nbsp;-: CIA-1 (2024-25) :-&nbsp;</h1>
+      <h2>🎓 Semester 3 Subjects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h4>COA (CSE)</h4>
+          <p class="price">Price:₹5</p>
+          <a href=""><button>Pay & View</button></a>
+        </div>
+        <div class="card">
+          <h4>DSTL (CSE)</h4>
+          <p class="price">Price:₹5</p>
+          <a href=""><button>Pay & View</button></a>
+        </div>
+        <div class="card">
+          <h4>Energy Science & Engg.</h4>
+          <p class="price">Price:₹5</p>
+          <a href=""><button>Pay & View</button></a>
+        </div>
+        <div class="card">
+          <h4>Technical Comm.</h4>
+          <p class="price">Price:₹5</p>
+          <a href=""><button>Pay & View</button></a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1 style="text-decoration: underline;"> &nbsp;&nbsp;-: CIA-1 (2024-25) :-&nbsp;</h1>
+      (More resources are coming , either free or with a minimal charges...😊)
+      <h2>🎓 Semester 4 Subjects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Mathematics-4</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('Maths -4 CIA-1.pdf')">Pay & View</button>
+        </div>
+        <div class="card">
+          <h4>Python Programming</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('Python CIA-1.pdf')">Pay & View</button>
+        </div>
+        <div class="card">
+          <h4>OOPS with java(IT)</h4>
+          <p class="price"></p>
+          <a href="https://payments.cashfree.com/forms?code=OOPS-CIA-1"><button>Pay & View</button></a>
+<button onclick="openQRModal('OOPS CIA-1.pdf')"></button>
+        </div>
+        <div class="card">
+          <h4>OOPS with java(CSE)</h4>
+          <p class="price"></p>
+          <a href=""><button>Pay & View</button></a>
+          <!-- <button onclick="openQRModal('OOPS CSE CIA-1.pdf')">Pay & View</button> -->
+        </div>
+        <div class="card">
+          <h4>Operating System</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('OS CIA-1.pdf')">Pay & View</button>
+        </div>
+        <div class="card">
+          <h4>UHV</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('UHV CIA-1.pdf')">Pay & View</button>
+        </div>
+        <div class="card">
+          <h4>TAFL</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('TAFL CIA-1.pdf')">Pay & View</button>
+        </div>
+        <!-- <div class="card">
+          <h4>Communication Engg.</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BEC401-COMMUNICATION-ENGINEERING.pdf')">Pay & View</button>
+        </div>
+        <div class="card">
+          <h4>Analog Circuits</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BEC402-ANALOG-CIRCUITS.pdf')">Pay & View</button>
+        </div>
+        <div class="card">
+          <h4>NAS</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BEE403-NETWORKS-ANALYSIS-SYNTHESIS.pdf')">Pay & View</button>
+        </div>
+        <div class="card">
+          <h4>Analog Electronics Circuits</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BOE408-ANALOG-ELECTRONICS-CIRCUITS.pdf')">Pay & View</button>
+        </div>
+        <div class="card">
+          <h4>Electrical Machines-1</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BEE402-ELECTRICAL-MACHINES-I.pdf')">Pay & View</button>
+        </div>
+        <div class="card">
+          <h4>Digital Electronics</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BEE401-DIGITAL-ELECTRONICS.pdf')">Pay & View</button>
+        </div>
+        <div class="card">
+          <h4>Technical Communication</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BAS401-TECHNICAL-COMMUNICATION.pdf')">Pay & View</button>
+        </div>
+        <div class="card">
+          <h4>Cyber Security</h4>
+          <p class="price"></p>
+          <button onclick="openQRModal('BCC401-CYBER-SECURITY.pdf')">Pay & View</button>
+        </div>-->
+        <!-- Add more subjects here -->
+      </div>
+    </section>
+    <!-- <section>
+  <h2>📤 Upload Paper (Email to Admin)</h2>
+  <div class="upload-form">
+    <select id="uploadSemester">
+      <option value="1">Semester 1</option>
+      <option value="2">Semester 2</option>
+      <option value="4">Semester 4</option>
+    </select>
+    <input type="text" id="uploadSubject" placeholder="Subject Name" required />
+    <input type="file" id="uploadPDF" accept="application/pdf" required />
+    <button onclick="sendEmail()">Send</button>
+  </div>
+</section> -->
     <footer>
-        <div class="start">
-            <h3>Start a project</h3>
-            <p>Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
-            <button>Let's do this</button>
-        </div>
-
-        <div class="cols">
-            <div class="about-col">
-                <h3>Ashutosh Maurya</h3>
-                <p>FrontEnd Website Developer</p>
-                <div class="submit-btn">
-                    <a href="Resume_Ashutosh.pdf" class="main-btn">
-                        <span class="btn-text">Download CV</span>
-                        <span class="btn-icon"><i class="fas fa-download"></i></span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="links-col">
-                <h4>Useful Links</h4>
-                <a href="index.html" target="_blank">Home</a>
-                <a href="AboutMe.html" target="_blank">About</a>
-                <a href="#" target="_blank">Skills</a>
-                <a href="Resume_Ashutosh.pdf" target="_blank">Resume</a>
-                <a href="Certificates.html" target="_blank">Certificates</a>
-                <a href="contact.html" target="_blank">Contact</a>
-                <a href="Projects.html" target="_blank">Projects</a>
-
-            </div>
-
-            <div class="links-col">
-                <h4>Social Media</h4>
-                <a href="https://www.instagram.com/astosm13_hi_h/" target="_blank">Instagram</a>
-                <a href="https://www.linkedin.com/in/ashutosh-maurya-6384042b3/" target="_blank">Linkedin</a>
-                <a href="https://x.com/AstosM123" target="_blank">Twitter</a>
-                <a href="https://www.youtube.com/@AstosM" target="_blank">Youtube</a>
-                <a href="https://github.com/AstosM" target="_blank">Github</a>
-                <a href="https://telegram.me/pRanTyAg1" target="_blank">Telegram</a>
-            </div>
-
-            <div class="news-col">
-                <h4>NewsLetter</h4>
-                <p>Enter your email and get notified about news, of.</p>
-
-                <form>
-                    <input type="email" placeholder="Your email address">
-                    <button><i class='bx bxl-telegram'></i></button>
-                </form>
-
-            </div>
-
-        </div>
-
+      <p> Copyright © <span id="year"></span> StudWeb. All rights reserved.</p>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
     </footer>
 
+  </div>
+  Made with ❣️ by Students
+  <!-- <a href="https://astosm.github.io/Ashu-Folio/" target="_blank" 
+   style="text-decoration: none; font-family:Arial, Helvetica, sans-serif; font-size: 16px;">
+   AstosM
+</a> -->
+  <!-- QR Modal -->
+  <div id="qrModal" class="modal" style="display:none;">
+    <div class="modal-box">
+      <!-- <h3>🪙 Pay ₹5 to Access</h3>
+    <p>Scan the QR code below or use any UPI app (GPay, PhonePe, Paytm).</p>
+    <canvas id="upiQR"></canvas>
+    <p style="font-size: 13px; color: gray;">Or click: <a href="upi://pay?pa=astosm123-2@oksbi&pn=StudWeb&am=5&cu=INR">upi://pay</a></p> -->
+
+      <div id="txnSection" style="margin-top: 20px;">
+        <label>Enter Your Full Name:</label><br>
+        <input type="text" id="txnInput" placeholder="e.g., John Doe" />
+        <button onclick="verifyTxn()">Submit</button>
+      </div>
+
+      <a id="accessLink" href="#" style="display:none; margin-top:10px;" download>
+        ✅ Download Paper
+      </a>
+      <br><br>
+      <button onclick="closeQR()">Cancel</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
